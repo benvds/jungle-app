@@ -19,7 +19,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-setup": "(mkdir node_modules || true) && ln -nsf ../../ui-lib node_modules/ui-lib"
   },
   "eslintConfig": {
     "extends": "react-app"
