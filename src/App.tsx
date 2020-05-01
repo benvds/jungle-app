@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
 
-import { config } from "@benvds/jungle-ui-lib";
+import { logVersion } from "@benvds/jungle-ui-lib";
 
 function App() {
+  logVersion();
   return (
     <div className="App">
       <header className="App-header">
-        <span>UI-LIB version: {config.version}</span>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
