@@ -1,25 +1,20 @@
 import React from "react";
 import "./App.css";
 
-import { logVersion } from "@benvds/jungle-ui-lib";
+import {
+  logVersion,
+  VersionView,
+  versionFormatted,
+} from "@benvds/jungle-ui-lib";
+// import { VersionView } from "@benvds/jungle-ui-lib/src/version-view";
 
 function App() {
   logVersion();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>{versionFormatted()}</p>
+      <VersionView />
     </div>
   );
 }
