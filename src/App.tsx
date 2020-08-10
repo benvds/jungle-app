@@ -1,12 +1,9 @@
 import React from "react";
 import "./App.css";
 
-import {
-  logVersion,
-  VersionView,
-  versionFormatted,
-} from "@benvds/jungle-ui-lib";
-// import { VersionView } from "@benvds/jungle-ui-lib/src/version-view";
+import { logVersion, VersionView, versionFormatted } from "ui-lib-pika";
+
+import "ui-lib-pika/src/assets/scss/version-view.css";
 
 function App() {
   logVersion();
